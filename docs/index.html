@@ -3,24 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Lola Background Video</title>
+    <title>Digital Lola ecommerce</title>
     <meta name="description" content="Full screen background video demo">
+
+    <!-- Android Devices -->
     <meta name="mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="./manifest.json">
+
+    <!-- Apple Devices -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Digital Lola" />
+    <link rel="apple-touch-icon" href="./media/icons/icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./media/icons/apple-touch-icon.png">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./media/img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./media/img/icons/favicon-16x16.png">
+    <link rel="icon" href="favicon.ico">
+
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <main id="container">
         <div class="logo">
-            <img src="./media/digital_lola_logo.png" alt="Digital Lola ecommerce">
+            <img src="./media/img/digital_lola_logo.png" alt="Digital Lola ecommerce">
         </div>
         <div class="icon" id="toggle">
             <i class="fa fa-2x fa-fullscreen"></i>
         </div>
-
-        <video id="my-video" class="video" poster="media/poster.jpg" loop>
-            <source src="./media/fashion.mp4" type="video/mp4">
-            <source src="./media/fashion.ogv" type="video/ogg">
-            <source src="./media/fashion.webm" type="video/webm">
+        <video id="my-video" class="video" loop controls poster="./media/img/poster.jpg">
+            <source src="./media/videos/fashion.mp4" type='video/mp4; codecs="avc1, mp4a"'>
+            <source src="./media/videos/fashion.ogv" type="video/ogg">
+            <source src="./media/videos/fashion.webm" type="video/webm">
+            <p>Your user agent does not support the HTML5 Video element.</p>
         </video>
     </main>
     <footer>
